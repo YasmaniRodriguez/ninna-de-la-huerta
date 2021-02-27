@@ -1,0 +1,4 @@
+@mixin logo-visibility ($visibility) {
+    position:absolute;
+    visibility: $visibility;
+}

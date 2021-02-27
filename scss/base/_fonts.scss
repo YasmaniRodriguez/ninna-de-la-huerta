@@ -1,0 +1,28 @@
+body {
+    font-family: 'Montserrat';
+}
+
+.copywriting-container {
+    font-family: 'Montserrat';
+
+    .copywriting {
+
+        .cw-title {
+            font-size: 1.5rem;
+        }
+
+        .cw-value-offer {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+
+        .cw-description {
+            font-size: 1rem;
+        }
+    }
+}
+
+.navbar-brand {
+    font-family: 'Ceviche One', cursive;
+    font-size: 2.7rem;
+}

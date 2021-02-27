@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.page-header .carousel-item img {
+  height: 567px;
+}
+
+.product {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.product:hover .thumbnail {
+  display: flex;
+  align-items: center;
+}
+
+.cr-i-03 .copywriting-container, .cr-i-02 .copywriting-container, .cr-i-01 .copywriting-container {
+  flex-wrap: wrap;
+  width: 500px;
+  position: absolute;
+}
+.cr-i-03 .copywriting-container .copywriting, .cr-i-02 .copywriting-container .copywriting, .cr-i-01 .copywriting-container .copywriting {
+  padding: 20px 20px;
+  color: #f3ebdd;
+  text-shadow: 1px 1px 10px #121311;
+  text-align: justify;
+}
+.cr-i-03 .copywriting-container .copywriting .cw-title, .cr-i-02 .copywriting-container .copywriting .cw-title, .cr-i-01 .copywriting-container .copywriting .cw-title {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.cr-i-03 .copywriting-container .copywriting .cw-value-offer, .cr-i-02 .copywriting-container .copywriting .cw-value-offer, .cr-i-01 .copywriting-container .copywriting .cw-value-offer {
+  animation: fade-in-fwd 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 0.67s both;
+}
+.cr-i-03 .copywriting-container .copywriting .cw-description, .cr-i-02 .copywriting-container .copywriting .cw-description, .cr-i-01 .copywriting-container .copywriting .cw-description {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.cr-i-03 .copywriting-container .cta-container, .cr-i-02 .copywriting-container .cta-container, .cr-i-01 .copywriting-container .cta-container {
+  text-align: center;
+  animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.copywriting-container {
+  font-family: "Montserrat";
+}
+.copywriting-container .copywriting .cw-title {
+  font-size: 1.5rem;
+}
+.copywriting-container .copywriting .cw-value-offer {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.copywriting-container .copywriting .cw-description {
+  font-size: 1rem;
+}
+
+.navbar-brand {
+  font-family: "Ceviche One", cursive;
+  font-size: 2.7rem;
+}
+
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-fwd {
+  0% {
+    transform: translateZ(-80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.page-content {
+  overflow-wrap: break-word;
+}
+.page-content .about-our-farm-container .about-our-farm {
+  margin: 20px 50px 0 50px;
+  display: flex;
+  text-align: justify;
+}
+.page-content .about-our-farm-container .about-our-farm .history {
+  width: 50%;
+}
+.page-content .about-our-farm-container .about-our-farm .history p {
+  color: #c0aea9;
+  padding: 0px 40px 0px 0px;
+  margin-top: 50px;
+}
+.page-content .about-our-farm-container .about-our-farm .history p .n-upper-case {
+  color: #ffab66;
+}
+.page-content .about-our-farm-container .about-our-farm .history p .d-lower-case {
+  color: #b3ccd0;
+}
+.page-content .about-our-farm-container .about-our-farm .history p .l-lower-case {
+  color: #d7b44a;
+}
+.page-content .about-our-farm-container .why-choose-us-container {
+  margin: 20px 50px 0 50px;
+}
+.page-content .about-our-farm-container .why-choose-us-container .because-we-have {
+  padding: 20px 0;
+}
+.page-content .our-galery-container {
+  margin: 20px 50px 0 50px;
+}
+.page-content .our-galery-container h2 {
+  width: 100%;
+  text-align: center;
+}
+.page-content .our-galery-container .product-category {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+}
+.page-content .upcoming-event-container {
+  margin: 40px 50px 0 50px;
+}
+.page-content .upcoming-event-container h2 {
+  width: 100%;
+  text-align: center;
+}
+.page-content .upcoming-event-container .upcoming-event {
+  margin-top: 40px;
+  display: flex;
+}
+.page-content .what-customer-say-container {
+  margin: 40px 50px 0 50px;
+}
+.page-content .what-customer-say-container h2 {
+  width: 100%;
+  text-align: center;
+}
+.page-content .what-customer-say-container .customer-testimonial {
+  margin-top: 40px;
+  display: flex;
+}
+.page-content .contact-us-container {
+  margin: 40px 0 0 0;
+}
+.page-content .contact-us-container h2 {
+  width: 100%;
+  text-align: center;
+}
+.page-content .contact-us-container .contact-us {
+  margin-top: 40px;
+}
+
+.page-footer {
+  background-color: #f3ebdd;
+  height: 300px;
+}
+hr {
+  margin: 0 0;
+}
+
+.license-container {
+  height: 40px;
+  background-color: #aa8caf;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #f3ebdd;
+}
+
+.navbar-brand {
+  margin: 0;
+  padding-left: 50px;
+}
+.navbar-brand p {
+  color: #c0aea9;
+  margin: 0;
+}
+.navbar-brand .n-upper-case {
+  color: #ffab66;
+}
+.navbar-brand .d-lower-case {
+  color: #b3ccd0;
+}
+.navbar-brand .l-lower-case {
+  color: #d7b44a;
+}
+.navbar-brand .h-upper-case {
+  color: #aa8caf;
+}
+
+.navbar {
+  background-color: #f3ebdd;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.navbar .container-fluid {
+  justify-content: space-between;
+}
+.navbar .navbar-collapse {
+  padding: 0px 50px;
+}
+.navbar .navbar-collapse ul {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.farmer-family {
+  width: 50%;
+}
+.farmer-family img {
+  width: 100%;
+  height: 100%;
+  border: solid 10px whitesmoke;
+}
+
+.because-we-have {
+  display: flex;
+  justify-content: space-around;
+}
+.because-we-have .warranty-container {
+  text-align: justify;
+  width: 23%;
+}
+.because-we-have .warranty-container .wa-header {
+  display: flex;
+}
+.because-we-have .warranty-container .wa-header p {
+  font-size: 56pt;
+  font-weight: 100;
+  line-height: 1;
+  color: #b3ccd0;
+}
+.because-we-have .warranty-container .wa-header img {
+  height: 25%;
+  width: 25%;
+  padding-left: 5px;
+}
+.because-we-have .warranty-container .wa-body :nth-child(2) {
+  color: #c0aea9;
+}
+
+.product {
+  margin: 10px 10px;
+  width: 400px;
+  height: 400px;
+  background-color: #f8fafb;
+  justify-items: center;
+  align-items: center;
+}
+
+.p01 {
+  background-image: url(../images/product/product-category-01.jpg);
+}
+
+.p02 {
+  background-image: url(../images/product/product-category-02.jpg);
+}
+
+.p03 {
+  background-image: url(../images/product/product-category-03.jpg);
+}
+
+.p04 {
+  background-image: url(../images/product/product-category-04.jpg);
+}
+
+.p05 {
+  background-image: url(../images/product/product-category-05.jpg);
+}
+
+.p06 {
+  background-image: url(../images/product/product-category-06.jpg);
+}
+
+.exhibition-stand {
+  background-image: url(../images/stand/city-fair.jpg);
+  width: 45%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0px 0px 10px 10px;
+  background-color: white;
+  box-shadow: 0px 5px 5px #333333b3;
+  /*
+      .stand {
+           img {
+               width: 100%;
+               height: 100%;
+           }
+      }
+  */
+}
+
+.event-calendar {
+  width: 55%;
+  display: block;
+}
+.event-calendar .event {
+  background-color: white;
+  box-shadow: 0px 0px 5px #333333b3;
+  margin: 0px 0px 10px 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.event-calendar .event .event-date {
+  display: inline-block;
+  width: 100%;
+  color: white;
+  background-color: #b3ccd0;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.event-calendar .event .event-date .day {
+  font-size: 56pt;
+  font-weight: 100;
+  line-height: 1;
+}
+.event-calendar .event .event-date .month {
+  font-size: 24pt;
+  font-weight: 900;
+  line-height: 1;
+}
+.event-calendar .event .event-place {
+  color: #c0aea9;
+  padding-top: 5px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+}
+.event-calendar .event .event-place .time {
+  font-size: 17pt;
+  font-weight: 700;
+  margin: 0px;
+  text-transform: uppercase;
+  grid-row: 1/1;
+}
+.event-calendar .event .event-place .place-address {
+  font-size: 13pt;
+  font-weight: 300;
+  margin: 0px;
+  grid-row: 2/2;
+}
+.event-calendar .event .event-place a {
+  cursor: pointer;
+  color: #c0aea9;
+  font-size: 11pt;
+  font-weight: 300;
+  padding: 3px 0px;
+  width: 100%;
+  text-decoration: none;
+  display: block;
+  grid-row: 3/3;
+}
+.event-calendar .event .event-place a:hover {
+  color: #1e1e1e;
+  background-color: #c8c8c8;
+}
+
+.customer-testimonial {
+  justify-content: space-between;
+}
+.customer-testimonial .customer {
+  width: 30%;
+}
+.customer-testimonial .customer .customer-say {
+  height: 40%;
+}
+.customer-testimonial .customer .customer-say p {
+  text-align: justify;
+  color: #c0aea9;
+}
+.customer-testimonial .customer .customer-profile {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 60%;
+}
+.customer-testimonial .customer .customer-profile img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  align-self: center;
+}
+.customer-testimonial .customer .customer-profile p {
+  text-align: center;
+  margin: 15px 0;
+}
+.customer-testimonial .customer .customer-profile .social-media {
+  text-align: center;
+}
+.customer-testimonial .customer .customer-profile .social-media i {
+  margin: 0 5px;
+}
+
+.contact-us {
+  color: #5D6063;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-us .contact-us-form {
+  display: flex;
+}
+
+.cr-i-01 .copywriting-container {
+  top: 200px;
+  left: 50px;
+}
+
+.cr-i-02 .copywriting-container {
+  top: 200px;
+  right: 50px;
+}
+
+.cr-i-03 .copywriting-container {
+  top: 200px;
+  right: 50px;
+}
+
+.thumbnail-container {
+  text-decoration: none;
+  font-size: 2rem;
+}
+.thumbnail-container .thumbnail {
+  background-color: rgba(245, 245, 245, 0.582);
+  border: solid 5px whitesmoke;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  display: none;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.thumbnail-container .thumbnail .category {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.cta-container .cta-link {
+  text-decoration: none;
+  color: white;
+  background-color: #aa8caf;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */

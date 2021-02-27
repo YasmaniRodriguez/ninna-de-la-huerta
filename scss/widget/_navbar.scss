@@ -1,0 +1,19 @@
+.navbar {
+    background-color: $navbar-color;
+    position:sticky;
+    top: 0;
+    z-index: 1;
+
+    .container-fluid {
+        justify-content: space-between;
+    }
+
+    .navbar-collapse {
+    padding: 0px 50px; 
+     ul {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+}

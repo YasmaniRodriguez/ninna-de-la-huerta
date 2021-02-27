@@ -1,0 +1,11 @@
+{
+  "name": "ninna-de-la-huerta",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yasmani rodriguez",
+  "license": "ISC",
+  "description": "landing page para derivar trafico hacia tienda de productos de granja"
+}

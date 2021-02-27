@@ -1,0 +1,104 @@
+.page-content {
+    overflow-wrap: break-word;
+
+    .about-our-farm-container {
+        
+        .about-our-farm {
+            margin: $section-margin-top $section-margin-side 0 $section-margin-side;
+            display: flex;
+            text-align: justify;
+
+            .history {
+                width: 50%;
+                
+                p {
+                    color: $p-color;
+                    padding: 0px 40px 0px 0px;
+                    margin-top: $section-margin-side;
+                    
+                    .n-upper-case {
+                        color:#ffab66;
+                        }
+    
+                    .d-lower-case {
+                        color: #b3ccd0;
+                
+                    }
+
+                    .l-lower-case {
+                        color: #d7b44a;
+                
+                    }
+
+                }
+
+            }
+        }
+
+        .why-choose-us-container {
+            margin: $section-margin-top $section-margin-side 0 $section-margin-side;
+
+            .because-we-have {
+                padding: $section-margin-top 0;
+            }
+        }
+    }
+
+   .our-galery-container {
+        margin: $section-margin-top $section-margin-side 0 $section-margin-side;
+        
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+        .product-category {
+            margin-top: $section-margin-top;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto;
+        }
+   }
+
+   .upcoming-event-container {
+        margin: $section-margin-top*2 $section-margin-side 0 $section-margin-side;   
+        
+        h2 {
+            width: 100%;
+            text-align: center;
+        }   
+
+       .upcoming-event {
+           margin-top: $section-margin-top*2;
+           display: flex;
+       }
+   }
+
+   .what-customer-say-container {
+        margin: $section-margin-top*2 $section-margin-side 0 $section-margin-side;
+        
+        h2 {
+            width: 100%;
+            text-align: center;
+        } 
+
+       .customer-testimonial {
+           margin-top: $section-margin-top*2;
+           display: flex;
+       }
+
+   }
+
+   .contact-us-container {
+        margin: $section-margin-top*2 0 0 0;
+        
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+        
+        .contact-us {
+            margin-top: $section-margin-top*2;
+        }
+
+    }
+}

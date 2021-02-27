@@ -1,0 +1,9 @@
+.page-header {
+
+    .carousel-item {
+        img {
+            @extend %carousel-size;
+        }
+    }
+
+}

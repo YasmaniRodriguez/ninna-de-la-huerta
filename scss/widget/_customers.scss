@@ -1,0 +1,42 @@
+.customer-testimonial {
+    justify-content: space-between;
+    .customer {
+        width: 30%;
+        .customer-say {
+            height: 40%;
+            i {
+
+            }
+            p {
+                text-align: justify;
+                color:$p-color;
+            }
+        }
+        .customer-profile {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 60%;
+
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                align-self: center;
+            }
+
+            p {
+                text-align: center;
+                margin: 15px 0;
+            }
+
+            .social-media {
+                text-align: center;
+
+                i {
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+}

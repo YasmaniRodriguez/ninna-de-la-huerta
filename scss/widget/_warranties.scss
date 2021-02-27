@@ -1,0 +1,31 @@
+
+.because-we-have {
+    display: flex;
+    justify-content: space-around;
+
+    .warranty-container {
+        text-align: justify;
+        width: 23%;
+        .wa-header {
+            display: flex;
+            p {
+                font-size: 56pt;
+                font-weight: 100;
+                line-height: 1;
+                color:#b3ccd0;
+            }
+
+            img {
+                height: 25%;
+                width: 25%;
+                padding-left: 5px;
+            }
+        }
+
+        .wa-body {
+            :nth-child(2) {
+                color: $p-color;
+            }
+        }
+    }
+}
