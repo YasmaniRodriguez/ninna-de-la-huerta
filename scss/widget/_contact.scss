@@ -1,11 +1,32 @@
 .contact-us {
-    color: #5D6063;
-    font-size: 18px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    .contact-info {
+        width: 50%;
+    }
+    
+    .ask-question-form {
+        width: 50%;
 
-    .contact-us-form {
-        display: flex;
+        .form-row {
+            display: flex;
+            flex-direction: column;
+            padding: 30px 0px;
+
+            .fr {
+                padding: 10px 0;
+                margin-bottom: 10px;
+                border-radius: 4px;
+                border: 0.5px solid #b3ccd0;
+            }
+
+            .submit {
+                padding: 10px 0;
+                margin-bottom: 10px;
+                border-radius: 4px;
+                border: none;
+                color: #f3ebdd;
+                background-color: #b3ccd0;
+            }
+        }
     }
 }

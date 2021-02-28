@@ -7,5 +7,13 @@
   },
   "author": "yasmani rodriguez",
   "license": "ISC",
-  "description": "landing page para derivar trafico hacia tienda de productos de granja"
+  "description": "landing page para derivar trafico hacia tienda de productos de granja",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasmaniRodriguez/ninna-de-la-huerta.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YasmaniRodriguez/ninna-de-la-huerta/issues"
+  },
+  "homepage": "https://github.com/YasmaniRodriguez/ninna-de-la-huerta#readme"
 }

@@ -89,15 +89,11 @@
    }
 
    .contact-us-container {
-        margin: $section-margin-top*2 0 0 0;
+    margin: $section-margin-top*2 $section-margin-side 0 $section-margin-side;
         
         h2 {
             width: 100%;
             text-align: center;
-        }
-        
-        .contact-us {
-            margin-top: $section-margin-top*2;
         }
 
     }
