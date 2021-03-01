@@ -1,20 +1,26 @@
 .page-footer {
     background-color: #aa8caf;
     height: 300px;
-    .footer-container {
+    display: flex;
 
+    .side {
+        width: 25%;
+    }
+
+    .social-media {
+        width: 50%;
+        display: flex;
     }
 
 }
 
-hr {
-    margin: 0 0;
-}
-
 .license-container {
-    height: 40px;
+    border-top: solid 1px #f3ebdd;
+    display: flex;
+    height: 80px;
     background-color: #aa8caf;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
     font-size: 1.3rem;
     color: #f3ebdd;
 }

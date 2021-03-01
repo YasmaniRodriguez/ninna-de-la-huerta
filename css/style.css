@@ -202,15 +202,23 @@ body {
 .page-footer {
   background-color: #aa8caf;
   height: 300px;
+  display: flex;
 }
-hr {
-  margin: 0 0;
+.page-footer .side {
+  width: 25%;
+}
+.page-footer .social-media {
+  width: 50%;
+  display: flex;
 }
 
 .license-container {
-  height: 40px;
+  border-top: solid 1px #f3ebdd;
+  display: flex;
+  height: 80px;
   background-color: #aa8caf;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   font-size: 1.3rem;
   color: #f3ebdd;
 }
@@ -489,6 +497,7 @@ hr {
 .thumbnail-container {
   text-decoration: none;
   font-size: 2rem;
+  height: 100%;
 }
 .thumbnail-container .thumbnail {
   background-color: rgba(245, 245, 245, 0.582);
@@ -511,6 +520,20 @@ hr {
   background-color: #aa8caf;
   padding: 10px 10px;
   border-radius: 5px;
+}
+
+#scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  color: #aa8caf;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
