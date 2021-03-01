@@ -445,8 +445,8 @@ hr {
 .contact-us {
   display: flex;
 }
-.contact-us .contact-info {
-  width: 50%;
+.contact-us .side {
+  width: 25%;
 }
 .contact-us .ask-question-form {
   width: 50%;
