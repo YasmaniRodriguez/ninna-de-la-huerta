@@ -1,6 +1,6 @@
 // when the user click on the product category: open a catalog window 
 function openWindow (URL){ 
-    window.open(URL,"Shop","width=1000,height=1000") 
+    window.open(URL,"Catalog","width=1000,height=1000") 
  } 
 
 // to get the button
