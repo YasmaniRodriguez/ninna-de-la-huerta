@@ -1,12 +1,13 @@
 .page-footer {
     background-color: #aa8caf;
-    height: 300px;
+    height: 200px;
     display: flex;
     padding: 20px 30px;
     justify-content: space-around;
+    color: #f3ebdd;
 
     .side {
-        width: 33%;
+        width: 33.33%;
         display: flex;
         flex-direction: column;
         padding: 0px 15px;
@@ -14,51 +15,82 @@
 
     .left {
 
-        .office-hour {
-            margin: 0px 10px;
+        .address {
+            display: flex;
+            a {
+                color: #b3ccd0;
+                padding-right: 10px;
+                padding-bottom: 10px;
+            }
         }
 
-        iframe {
-            height: 300px;
-            width: 50%;
+        .office-hour {
+            margin: 0;
+
+            p {
+                margin: 0;
+            }
         }
+
     }
 
-    .talk-to-us {
-        width: 33%;
+    .speak-with-us {
+        width: 33.33%;
         display: flex;
         flex-direction: column;
         padding: 0px 15px;
 
-        p {
-            text-align: justify;
-        }
-
-        .messenger {
+        .channel {
             display: flex;
+
             a {
-                padding-right: 20px;
-            }
+                color: #b3ccd0;
+                padding-right: 10px;
+                padding-bottom: 10px;
+              }
         }
     }
 
     .right {
 
-        p {
-            text-align: justify;
+        .subscribe-email {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                padding: 5px 0;
+                border-radius: 4px;
+                border: 0.5px solid #b3ccd0;
+                width: 67%;
+            }
+
+            button {
+                padding: 5px 5px;
+                border-radius: 4px;
+                border: none;
+                color: #f3ebdd;
+                background-color: #b3ccd0;
+            }
+
         }
 
-        .subscribe {
-
-        }
-
-        .social-media {
+        .subscribe-condition {
+            display: flex;
             margin-top: 10px;
 
-            a {
-                padding-right: 20px;
+            input {
+                border: 0.5px solid #b3ccd0;
+                width: 20px;
+                height: 20px;
+                margin-right: 10px;
+
+             }
+
+            p {
+                text-align: justify;
+
             }
-            
+           
         }
     }
 
@@ -67,10 +99,23 @@
 .license-container {
     border-top: solid 1px #f3ebdd;
     display: flex;
+    flex-direction: column;
     height: 80px;
     background-color: #aa8caf;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
     color: #f3ebdd;
+
+    .license {
+        p {
+            margin: 0;
+        }
+    }
+
+    .social-media {
+        a {
+            color: #b3ccd0;
+        }
+    }
 }

@@ -201,58 +201,93 @@ body {
 
 .page-footer {
   background-color: #aa8caf;
-  height: 300px;
+  height: 200px;
   display: flex;
   padding: 20px 30px;
   justify-content: space-around;
+  color: #f3ebdd;
 }
 .page-footer .side {
-  width: 33%;
+  width: 33.33%;
   display: flex;
   flex-direction: column;
   padding: 0px 15px;
+}
+.page-footer .left .address {
+  display: flex;
+}
+.page-footer .left .address a {
+  color: #b3ccd0;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 .page-footer .left .office-hour {
-  margin: 0px 10px;
+  margin: 0;
 }
-.page-footer .left iframe {
-  height: 300px;
-  width: 50%;
+.page-footer .left .office-hour p {
+  margin: 0;
 }
-.page-footer .talk-to-us {
-  width: 33%;
+.page-footer .speak-with-us {
+  width: 33.33%;
   display: flex;
   flex-direction: column;
   padding: 0px 15px;
 }
-.page-footer .talk-to-us p {
-  text-align: justify;
-}
-.page-footer .talk-to-us .messenger {
+.page-footer .speak-with-us .channel {
   display: flex;
 }
-.page-footer .talk-to-us .messenger a {
-  padding-right: 20px;
+.page-footer .speak-with-us .channel a {
+  color: #b3ccd0;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
-.page-footer .right p {
-  text-align: justify;
+.page-footer .right .subscribe-email {
+  display: flex;
+  justify-content: space-between;
 }
-.page-footer .right .social-media {
+.page-footer .right .subscribe-email input {
+  padding: 5px 0;
+  border-radius: 4px;
+  border: 0.5px solid #b3ccd0;
+  width: 67%;
+}
+.page-footer .right .subscribe-email button {
+  padding: 5px 5px;
+  border-radius: 4px;
+  border: none;
+  color: #f3ebdd;
+  background-color: #b3ccd0;
+}
+.page-footer .right .subscribe-condition {
+  display: flex;
   margin-top: 10px;
 }
-.page-footer .right .social-media a {
-  padding-right: 20px;
+.page-footer .right .subscribe-condition input {
+  border: 0.5px solid #b3ccd0;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+.page-footer .right .subscribe-condition p {
+  text-align: justify;
 }
 
 .license-container {
   border-top: solid 1px #f3ebdd;
   display: flex;
+  flex-direction: column;
   height: 80px;
   background-color: #aa8caf;
   justify-content: center;
   align-items: center;
   font-size: 1.3rem;
   color: #f3ebdd;
+}
+.license-container .license p {
+  margin: 0;
+}
+.license-container .social-media a {
+  color: #b3ccd0;
 }
 
 .navbar-brand {
@@ -291,6 +326,9 @@ body {
 .navbar .navbar-collapse ul {
   width: 100%;
   justify-content: space-between;
+}
+.navbar .navbar-collapse ul li a {
+  color: #aa8caf;
 }
 
 .farmer-family {
@@ -394,7 +432,7 @@ body {
   display: inline-block;
   width: 100%;
   color: white;
-  background-color: #b3ccd0;
+  background-color: #d7b44a;
   padding: 5px;
   text-align: center;
   text-transform: uppercase;
@@ -443,7 +481,6 @@ body {
 }
 .event-calendar .event .event-place a:hover {
   color: #1e1e1e;
-  background-color: #c8c8c8;
 }
 
 .customer-testimonial {
@@ -478,7 +515,10 @@ body {
 .customer-testimonial .customer .customer-profile .social-media {
   text-align: center;
 }
-.customer-testimonial .customer .customer-profile .social-media i {
+.customer-testimonial .customer .customer-profile .social-media a {
+  color: #b3ccd0;
+}
+.customer-testimonial .customer .customer-profile .social-media a i {
   margin: 0 5px;
 }
 
@@ -544,6 +584,7 @@ body {
   display: block;
   text-align: center;
   width: 100%;
+  color: #aa8caf;
 }
 
 .cta-container .cta-link {

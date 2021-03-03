@@ -9,11 +9,17 @@
     }
 
     .navbar-collapse {
-    padding: 0px 50px; 
-     ul {
-        width: 100%;
-        justify-content: space-between;
-    }
+        padding: 0px 50px; 
+        ul {
+            width: 100%;
+            justify-content: space-between;
+
+            li{
+                a {
+                    color: #aa8caf;
+                }
+            }
+        }
 }
 
 }
