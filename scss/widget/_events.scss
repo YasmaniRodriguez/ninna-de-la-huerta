@@ -12,7 +12,6 @@
         .event-date {
             display: inline-block;
             width: 100%;
-            color: rgb(255, 255, 255);
             background-color: #d7b44a;
             padding: 5px;
             text-align: center;
@@ -50,8 +49,8 @@
             .place-address {
                 font-size: 13pt;
                 font-weight: 300;
-                margin: 0px;
                 grid-row: 2 / 2;
+                margin: 0px;
             }
 
             a {
@@ -62,11 +61,21 @@
                 padding: 3px 0px;
                 width: 100%;
                 text-decoration: none;
-                display: block;
+                display: flex;
+                justify-content: center;
+                text-align: center;
                 grid-row: 3 / 3;
 
                 &:hover {
                     color: rgb(30, 30, 30);
+                }
+
+                i {
+                    padding: 0px 5px;
+                }
+
+                p {
+                    margin: 0;
                 }
             }
         }

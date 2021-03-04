@@ -125,9 +125,62 @@ body {
     opacity: 1;
   }
 }
-.page-content {
-  overflow-wrap: break-word;
+h2 {
+  color: #3e556c;
 }
+
+.wa-body :nth-child(1) {
+  color: #3e556c;
+}
+
+.category {
+  color: #3e556c;
+}
+
+.navbar-brand p {
+  color: #c0aea9;
+}
+.navbar-brand .n-upper-case {
+  color: #ffab66;
+}
+.navbar-brand .d-lower-case {
+  color: #b3ccd0;
+}
+.navbar-brand .l-lower-case {
+  color: #d7b44a;
+}
+.navbar-brand .h-upper-case {
+  color: #aa8caf;
+}
+
+.cta-link {
+  color: white;
+}
+
+.customer-say i {
+  color: #b3ccd0;
+}
+
+.social-media a {
+  color: #b3ccd0;
+}
+
+.wa-header p {
+  color: #b3ccd0;
+}
+
+.event-date {
+  color: white;
+}
+
+.submit {
+  color: white;
+}
+
+.license-container {
+  color: #f3ebdd;
+}
+
 .page-content .about-our-farm-container .about-our-farm {
   margin: 20px 50px 0 50px;
   display: flex;
@@ -201,75 +254,57 @@ body {
 
 .page-footer {
   background-color: #aa8caf;
-  height: 200px;
+  height: 300px;
   display: flex;
-  padding: 20px 30px;
+  padding: 20px 20px;
+  color: #f3ebdd;
+  display: flex;
   justify-content: space-around;
-  color: #f3ebdd;
 }
-.page-footer .side {
-  width: 33.33%;
+.page-footer .foot-section {
+  height: 100%;
+  width: 30%;
   display: flex;
   flex-direction: column;
-  padding: 0px 15px;
+  padding: 10px;
 }
-.page-footer .left .address {
-  display: flex;
-}
-.page-footer .left .address a {
-  color: #b3ccd0;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-.page-footer .left .office-hour {
+.page-footer .foot-section h3 {
   margin: 0;
 }
-.page-footer .left .office-hour p {
-  margin: 0;
-}
-.page-footer .speak-with-us {
-  width: 33.33%;
+.page-footer .foot-section .foot-content {
   display: flex;
-  flex-direction: column;
-  padding: 0px 15px;
+  justify-content: left;
 }
-.page-footer .speak-with-us .channel {
+.page-footer .foot-section .foot-content a {
   display: flex;
-}
-.page-footer .speak-with-us .channel a {
-  color: #b3ccd0;
-  padding-right: 10px;
-  padding-bottom: 10px;
-}
-.page-footer .right .subscribe-email {
-  display: flex;
-  justify-content: space-between;
-}
-.page-footer .right .subscribe-email input {
-  padding: 5px 0;
-  border-radius: 4px;
-  border: 0.5px solid #b3ccd0;
-  width: 67%;
-}
-.page-footer .right .subscribe-email button {
-  padding: 5px 5px;
-  border-radius: 4px;
-  border: none;
+  text-decoration: none;
   color: #f3ebdd;
-  background-color: #b3ccd0;
 }
-.page-footer .right .subscribe-condition {
+.page-footer .foot-section .foot-content a i {
+  color: #b3ccd0;
+  padding: 10px 10px;
+}
+.page-footer .foot-section .foot-description {
   display: flex;
-  margin-top: 10px;
+  margin: 10px 0px;
 }
-.page-footer .right .subscribe-condition input {
-  border: 0.5px solid #b3ccd0;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-}
-.page-footer .right .subscribe-condition p {
+.page-footer .foot-section .foot-description p {
+  margin: 0;
   text-align: justify;
+}
+.page-footer .foot-section .subscribe {
+  justify-content: space-around;
+}
+.page-footer .foot-section .subscribe input {
+  border: 0.5px solid #b3ccd0;
+  padding: 5px;
+  border-radius: 4px;
+}
+.page-footer .foot-section .subscribe .submit {
+  border-radius: 4px;
+  padding: 0px 5px;
+  border: none;
+  background-color: #b3ccd0;
 }
 
 .license-container {
@@ -286,29 +321,13 @@ body {
 .license-container .license p {
   margin: 0;
 }
-.license-container .social-media a {
-  color: #b3ccd0;
-}
 
 .navbar-brand {
   margin: 0;
   padding-left: 50px;
 }
 .navbar-brand p {
-  color: #c0aea9;
   margin: 0;
-}
-.navbar-brand .n-upper-case {
-  color: #ffab66;
-}
-.navbar-brand .d-lower-case {
-  color: #b3ccd0;
-}
-.navbar-brand .l-lower-case {
-  color: #d7b44a;
-}
-.navbar-brand .h-upper-case {
-  color: #aa8caf;
 }
 
 .navbar {
@@ -355,7 +374,6 @@ body {
   font-size: 56pt;
   font-weight: 100;
   line-height: 1;
-  color: #b3ccd0;
 }
 .because-we-have .warranty-container .wa-header img {
   height: 25%;
@@ -431,7 +449,6 @@ body {
 .event-calendar .event .event-date {
   display: inline-block;
   width: 100%;
-  color: white;
   background-color: #d7b44a;
   padding: 5px;
   text-align: center;
@@ -465,8 +482,8 @@ body {
 .event-calendar .event .event-place .place-address {
   font-size: 13pt;
   font-weight: 300;
-  margin: 0px;
   grid-row: 2/2;
+  margin: 0px;
 }
 .event-calendar .event .event-place a {
   cursor: pointer;
@@ -476,11 +493,19 @@ body {
   padding: 3px 0px;
   width: 100%;
   text-decoration: none;
-  display: block;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   grid-row: 3/3;
 }
 .event-calendar .event .event-place a:hover {
   color: #1e1e1e;
+}
+.event-calendar .event .event-place a i {
+  padding: 0px 5px;
+}
+.event-calendar .event .event-place a p {
+  margin: 0;
 }
 
 .customer-testimonial {
@@ -515,9 +540,6 @@ body {
 .customer-testimonial .customer .customer-profile .social-media {
   text-align: center;
 }
-.customer-testimonial .customer .customer-profile .social-media a {
-  color: #b3ccd0;
-}
 .customer-testimonial .customer .customer-profile .social-media a i {
   margin: 0 5px;
 }
@@ -547,7 +569,6 @@ body {
   margin-bottom: 10px;
   border-radius: 4px;
   border: none;
-  color: #f3ebdd;
   background-color: #b3ccd0;
 }
 
@@ -584,12 +605,10 @@ body {
   display: block;
   text-align: center;
   width: 100%;
-  color: #aa8caf;
 }
 
 .cta-container .cta-link {
   text-decoration: none;
-  color: white;
   background-color: #aa8caf;
   padding: 10px 10px;
   border-radius: 5px;

@@ -1,5 +1,4 @@
 .page-content {
-    overflow-wrap: break-word;
 
     .about-our-farm-container {
         
@@ -60,7 +59,7 @@
    }
 
    .upcoming-event-container {
-        margin: $section-margin-top*2 $section-margin-side 0 $section-margin-side;   
+         margin: $section-margin-top*2 $section-margin-side 0 $section-margin-side;   
         
         h2 {
             width: 100%;
@@ -89,7 +88,7 @@
    }
 
    .contact-us-container {
-    margin: $section-margin-top*2 $section-margin-side 0 $section-margin-side;
+        margin: $section-margin-top*2 $section-margin-side 0 $section-margin-side;
         
         h2 {
             width: 100%;
