@@ -6,12 +6,12 @@
 @import 'base/animations';
 @import 'base/colors';
 
-@import 'layout/header';
-@import 'layout/content';
-@import 'layout/footer';
+@import 'pages/header';
+@import 'pages/content';
+@import 'pages/footer';
+@import 'pages/navbar';
 
 @import 'widget/logo';
-@import 'widget/navbar';
 @import 'widget/farmers';
 @import 'widget/warranties';
 @import 'widget/products';
