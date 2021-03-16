@@ -53,7 +53,7 @@ body {
   font-size: 1.5rem;
 }
 .copywriting-container .copywriting .cw-value-offer {
-  font-size: 2rem;
+  font-size: 1.75rem;
   text-transform: uppercase;
 }
 .copywriting-container .copywriting .cw-description {
@@ -61,8 +61,8 @@ body {
 }
 
 .navbar-brand {
-  font-family: "Ceviche One", cursive;
-  font-size: 2.7rem;
+  font-family: "Ruthie", cursive;
+  font-size: 3rem;
 }
 
 @keyframes slide-in-right {
