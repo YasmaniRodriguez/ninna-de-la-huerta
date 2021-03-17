@@ -2,6 +2,16 @@ h2 {
     color: #3e556c;
 }
 
+p {
+    color: #c0aea9
+}
+
+.copywriting {
+    p {
+        color: #f3ebdd;
+    }
+}
+
 .wa-body {
 
     :nth-child(1) {
@@ -9,16 +19,11 @@ h2 {
     }
 }
 
-
 .category {
     color: #3e556c;
 }
 
 .navbar-brand {
-
-    p {
-        color: #c0aea9;
-    }
 
     .n-upper-case {
         color:#ffab66;
@@ -70,6 +75,8 @@ h2 {
     color: white;
 }
 
-.license-container {
-    color: #f3ebdd;
+.page-footer {
+    p {
+        color: #f3ebdd;
+    }
 }

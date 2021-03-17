@@ -1,7 +1,6 @@
 .page-content {
 
     .about-our-farm-container {
-        
         .about-our-farm {
             margin: $section-margin-top $section-margin-side 0 $section-margin-side;
             display: flex;
@@ -11,26 +10,8 @@
                 width: 50%;
                 
                 p {
-                    color: $p-color;
                     padding: 0px 40px 0px 0px;
-                    margin-top: $section-margin-side;
-                    
-                    .n-upper-case {
-                        color:#ffab66;
-                        }
-    
-                    .d-lower-case {
-                        color: #b3ccd0;
-                
-                    }
-
-                    .l-lower-case {
-                        color: #d7b44a;
-                
-                    }
-
                 }
-
             }
         }
 
