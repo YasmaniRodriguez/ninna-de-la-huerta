@@ -1,24 +1,20 @@
+//layout and display
+
 .page-content {
 
     .about-our-farm-container {
-        .about-our-farm {
-            margin: $section-margin-top $section-margin-side 0 $section-margin-side;
-            display: flex;
-            text-align: justify;
+        display: flex;
+        margin: $section-margin-top $section-margin-side 0 $section-margin-side;
 
-            .history {
-                width: 50%;
-                
-                p {
-                    padding: 0px 40px 0px 0px;
-                }
+        .why-choose-us {
+            h2 {
+                width: 100%;
+                text-align: left;
             }
-        }
-
-        .why-choose-us-container {
-            margin: $section-margin-top $section-margin-side 0 $section-margin-side;
 
             .because-we-have {
+                display: flex;
+                justify-content: space-between;
                 padding: $section-margin-top 0;
             }
         }
@@ -31,6 +27,7 @@
             width: 100%;
             text-align: center;
         }
+
         .product-category {
             margin-top: $section-margin-top;
             display: grid;

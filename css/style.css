@@ -45,10 +45,15 @@
 body {
   font-family: "Montserrat";
 }
-
-.copywriting-container {
-  font-family: "Montserrat";
+body h2 {
+  color: #3e556c;
+  text-transform: uppercase;
 }
+body p {
+  color: #c0aea9;
+  text-align: justify;
+}
+
 .copywriting-container .copywriting .cw-title {
   font-size: 1.5rem;
 }
@@ -125,20 +130,8 @@ body {
     opacity: 1;
   }
 }
-h2 {
-  color: #3e556c;
-}
-
-p {
-  color: #c0aea9;
-}
-
 .copywriting p {
   color: #f3ebdd;
-}
-
-.wa-body :nth-child(1) {
-  color: #3e556c;
 }
 
 .category {
@@ -170,10 +163,6 @@ p {
   color: #b3ccd0;
 }
 
-.wa-header p {
-  color: #b3ccd0;
-}
-
 .event-date {
   color: white;
 }
@@ -186,21 +175,17 @@ p {
   color: #f3ebdd;
 }
 
-.page-content .about-our-farm-container .about-our-farm {
-  margin: 20px 50px 0 50px;
+.page-content .about-our-farm-container {
   display: flex;
-  text-align: justify;
-}
-.page-content .about-our-farm-container .about-our-farm .history {
-  width: 50%;
-}
-.page-content .about-our-farm-container .about-our-farm .history p {
-  padding: 0px 40px 0px 0px;
-}
-.page-content .about-our-farm-container .why-choose-us-container {
   margin: 20px 50px 0 50px;
 }
-.page-content .about-our-farm-container .why-choose-us-container .because-we-have {
+.page-content .about-our-farm-container .why-choose-us h2 {
+  width: 100%;
+  text-align: left;
+}
+.page-content .about-our-farm-container .why-choose-us .because-we-have {
+  display: flex;
+  justify-content: space-between;
   padding: 20px 0;
 }
 .page-content .our-galery-container {
@@ -344,6 +329,15 @@ p {
   margin: 0;
 }
 
+.about-our-farm {
+  width: 50%;
+  padding: 0px 40px 0px 0px;
+}
+.about-our-farm .why-choose-us img {
+  height: 100px;
+  width: 100px;
+}
+
 .farmer-family {
   width: 50%;
 }
@@ -353,25 +347,21 @@ p {
   border: solid 10px whitesmoke;
 }
 
-.because-we-have {
-  display: flex;
-  justify-content: space-around;
-}
-.because-we-have .warranty-container {
-  text-align: justify;
-  width: 23%;
-}
-.because-we-have .warranty-container .wa-header {
+.warranty-container .wa-header {
   display: flex;
 }
-.because-we-have .warranty-container .wa-header p {
+.warranty-container .wa-header :nth-child(1) {
+  display: none;
+}
+.warranty-container .wa-header p {
   font-size: 56pt;
   font-weight: 100;
   line-height: 1;
+  color: #b3ccd05b;
 }
-.because-we-have .warranty-container .wa-header img {
-  height: 25%;
-  width: 25%;
+.warranty-container .wa-header img {
+  height: 10%;
+  width: 10%;
   padding-left: 5px;
 }
 
