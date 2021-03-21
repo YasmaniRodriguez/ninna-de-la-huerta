@@ -22,3 +22,17 @@ function openWindow (URL){
    document.body.scrollTop = 0;
    document.documentElement.scrollTop = 0;
  }
+
+ function openTab(evt, tabName) {
+  var i, tabpanel, tablink;
+  tabpanel = document.getElementsByClassName("wa-tab-panel");
+  for (i = 0; i < tabpanel.length; i++) {
+    tabpanel[i].style.display = "none";
+  }
+  tablink = document.getElementsByClassName("tab-link");
+  for (i = 0; i < tablink.length; i++) {
+    tablink[i].className = tablink[i].className.replace(" active", "");
+  }
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
