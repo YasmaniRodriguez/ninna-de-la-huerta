@@ -2,7 +2,7 @@
     background-color: $navbar-color;
     position:sticky;
     top: 0;
-    z-index: 1;
+    z-index: 99;
 
     .container-fluid {
         justify-content: space-between;
