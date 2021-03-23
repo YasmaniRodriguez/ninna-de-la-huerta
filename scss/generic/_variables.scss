@@ -1,2 +1,27 @@
 $navbar-color:#f3ebdd;
 $section-margin: 50px 50px;
+
+$border: 1px solid rgba(191, 191, 191, 0.4);
+$items: 5;
+$rows: ceil($items/2);
+
+$card-height: 450px;
+$card-width: 450px;
+$inner-margin: 15px;
+$number-size: 35px;
+$stagger: 180px;
+$outer-margin: 90px;
+$marker-size: 9px;
+
+$steps: #46b8e9;
+$colors: #b3ccd0,#d7b44a,#aa8caf;
+$timeline: #bdbdbd;
+
+$container-height: $rows * ($card-height + $outer-margin) + $stagger;
+$container-width: $card-width*2 + $outer-margin*3;
+$head-height: $number-size + 50;
+$body-height: $card-height - $head-height;
+$marker-dist: $card-width + $outer-margin/2 - $marker-size/2;
+
+$counter: $items - $rows + 2;
+
