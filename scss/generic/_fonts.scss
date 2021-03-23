@@ -35,5 +35,15 @@ body {
 
 .navbar-brand {
     font-family: 'Ruthie', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
+}
+
+.navbar-collapse {
+    ul {
+        li {
+            a {
+                font-size: 1.5rem;
+            }
+        }
+    }
 }
