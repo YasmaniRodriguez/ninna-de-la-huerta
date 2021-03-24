@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
 .product {
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,11 +63,6 @@ body p {
 }
 .copywriting-container .copywriting .cw-description {
   font-size: 1rem;
-}
-
-.navbar-brand {
-  font-family: "Ruthie", cursive;
-  font-size: 4rem;
 }
 
 .navbar-collapse ul li a {
@@ -138,19 +137,6 @@ body p {
   color: #3e556c;
 }
 
-.navbar-brand .n-upper-case {
-  color: #ffab66;
-}
-.navbar-brand .d-lower-case {
-  color: #b3ccd0;
-}
-.navbar-brand .l-lower-case {
-  color: #d7b44a;
-}
-.navbar-brand .h-upper-case {
-  color: #aa8caf;
-}
-
 .cta-link {
   color: white;
 }
@@ -171,10 +157,6 @@ body p {
   color: #f3ebdd;
 }
 
-.page-content .about-our-farm-container {
-  display: flex;
-  margin: 50px 50px;
-}
 .page-content .our-galery-container {
   margin: 50px 50px;
 }
@@ -352,49 +334,58 @@ body p {
   margin: 0;
   padding-left: 50px;
 }
-.navbar-brand p {
-  margin: 0;
+
+.brand {
+  font-family: "Ruthie", cursive;
+  font-size: 4rem;
+}
+.brand .n-upper-case {
+  color: #ffab66;
+}
+.brand .d-lower-case {
+  color: #b3ccd0;
+}
+.brand .l-lower-case {
+  color: #d7b44a;
+}
+.brand .h-upper-case {
+  color: #aa8caf;
 }
 
 .about-our-farm {
-  width: 40%;
-  padding: 0px 40px 0px 0px;
+  display: flex;
+  padding: 50px 50px;
 }
-.about-our-farm .why-choose-us h2 {
-  width: 100%;
-  text-align: left;
-  padding: 10px 0px;
-}
-.about-our-farm .why-choose-us .nav-pills {
-  justify-content: space-between;
-  padding: 10px 0px;
-}
-.about-our-farm .why-choose-us .nav-pills button {
-  border: none;
-  background-color: transparent;
-}
-.about-our-farm .why-choose-us .nav-pills button:hover .wa-icon {
-  transform: scale(1.1);
-}
-.about-our-farm .why-choose-us .nav-pills button img {
-  height: 100px;
-  width: 100px;
-}
-
-.farmer-family {
+.about-our-farm .farmer-family {
   width: 60%;
 }
-.farmer-family img {
+.about-our-farm .farmer-family img {
   width: 100%;
   height: 100%;
   border: solid 5px whitesmoke;
 }
-
-.warranty-container .wa-header {
+.about-our-farm .about-us {
+  width: 40%;
+  padding: 0px 0px 0px 40px;
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.warranty-container .wa-header :nth-child(1) {
-  display: none;
+.about-our-farm .about-us .who-we-are h2 {
+  width: 100%;
+  text-align: left;
+  padding: 10px 0px;
+}
+.about-our-farm .about-us .who-we-are .nav-pills {
+  justify-content: space-between;
+  padding: 10px 0px;
+}
+.about-our-farm .about-us .who-we-are .nav-pills button {
+  border: none;
+  background-color: transparent;
+}
+.about-our-farm .about-us .who-we-are .nav-pills button:hover .we-icon {
+  transform: scale(1.1);
 }
 .product {
   margin: 10px 10px;
@@ -794,6 +785,41 @@ body p {
   cursor: pointer;
   padding: 5px;
   border-radius: 10px;
+}
+
+.why-choose-us {
+  display: flex;
+  padding: 50px 50px;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+.why-choose-us .warranty-container {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.why-choose-us .warranty-container .wa-header {
+  text-transform: uppercase;
+  color: #3e556c;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.why-choose-us .warranty-container .wa-icon {
+  display: flex;
+  width: 100%;
+  height: 20vh;
+  align-items: center;
+  padding: 20px 0px;
+}
+.why-choose-us .warranty-container .wa-icon img {
+  width: 100%;
+  height: 100%;
+}
+.why-choose-us .warranty-container .wa-body p {
+  text-align: center;
+}
+.why-choose-us .vertical-line {
+  border: solid 1px white;
 }
 
 /*# sourceMappingURL=style.css.map */

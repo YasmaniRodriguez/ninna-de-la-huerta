@@ -1,0 +1,44 @@
+.why-choose-us {
+    display: flex;
+    padding: 50px 50px;
+    justify-content: space-between;
+    background-color: whitesmoke;
+
+    .warranty-container {
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+
+        .wa-header {
+            text-transform: uppercase;
+            color: #3e556c;
+            font-size: 1.1rem;
+            text-align: center;
+        }
+
+        .wa-icon {
+            display: flex;
+            width: 100%;
+            height: 20vh;
+            align-items: center;
+            padding: 20px 0px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+
+        .wa-body {
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .vertical-line {
+        border: solid 1px white ;
+    }
+}

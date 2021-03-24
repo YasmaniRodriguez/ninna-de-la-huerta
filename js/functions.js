@@ -25,7 +25,7 @@ function openWindow (URL){
 
  function openTab(evt, tabName) {
   var i, tabpanel, tablink;
-  tabpanel = document.getElementsByClassName("wa-tab-panel");
+  tabpanel = document.getElementsByClassName("we-tab-panel");
   for (i = 0; i < tabpanel.length; i++) {
     tabpanel[i].style.display = "none";
   }
