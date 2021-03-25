@@ -8,6 +8,10 @@ p {
   margin: 0;
 }
 
+h2 {
+  margin: 0;
+}
+
 .product {
   background-size: cover;
   background-repeat: no-repeat;
@@ -339,16 +343,20 @@ body p {
   font-family: "Ruthie", cursive;
   font-size: 4rem;
 }
-.brand .n-upper-case {
+
+.n-upper-case {
   color: #ffab66;
 }
-.brand .d-lower-case {
+
+.d-lower-case {
   color: #b3ccd0;
 }
-.brand .l-lower-case {
+
+.l-lower-case {
   color: #d7b44a;
 }
-.brand .h-upper-case {
+
+.h-upper-case {
   color: #aa8caf;
 }
 
@@ -357,7 +365,7 @@ body p {
   padding: 50px 50px;
 }
 .about-our-farm .farmer-family {
-  width: 60%;
+  width: 55%;
 }
 .about-our-farm .farmer-family img {
   width: 100%;
@@ -365,28 +373,45 @@ body p {
   border: solid 5px whitesmoke;
 }
 .about-our-farm .about-us {
-  width: 40%;
+  width: 45%;
   padding: 0px 0px 0px 40px;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  flex-direction: column;
 }
-.about-our-farm .about-us .who-we-are h2 {
-  width: 100%;
-  text-align: left;
-  padding: 10px 0px;
+.about-our-farm .about-us .page-section-title {
+  height: 10%;
+}
+.about-our-farm .about-us .farm-name {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.about-our-farm .about-us .farm-name p {
+  font-family: "Ruthie", cursive;
+  font-size: 3.1rem;
+}
+.about-our-farm .about-us .who-we-are {
+  height: 40%;
 }
 .about-our-farm .about-us .who-we-are .nav-pills {
   justify-content: space-between;
-  padding: 10px 0px;
 }
 .about-our-farm .about-us .who-we-are .nav-pills button {
   border: none;
   background-color: transparent;
 }
+.about-our-farm .about-us .who-we-are .nav-pills button .we-icon {
+  color: #3e556c;
+}
 .about-our-farm .about-us .who-we-are .nav-pills button:hover .we-icon {
   transform: scale(1.1);
 }
+.about-our-farm .about-us .who-we-are .tab-content {
+  padding-top: 20px;
+}
+
 .product {
   margin: 10px 10px;
   width: 400px;
