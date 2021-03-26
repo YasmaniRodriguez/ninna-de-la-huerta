@@ -1,5 +1,3 @@
-//layout and display
-
 .page-content {
 
     .about-our-farm-container {
@@ -7,18 +5,11 @@
     }
 
    .our-galery-container {
-        margin: $section-margin;
         
         h2 {
+            padding-top: 50px;
             width: 100%;
             text-align: center;
-        }
-
-        .product-category {
-            margin-top: $section-margin;
-            display: grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: auto auto;
         }
    }
 

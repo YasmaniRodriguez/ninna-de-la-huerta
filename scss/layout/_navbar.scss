@@ -1,68 +1,24 @@
 .navbar {
-    
-    position:absolute;
-    top: 0;
-    z-index: 3;
+  background-color: $navbar-color;
+  position:sticky;
+  top: 0;
+  z-index: 99;
 
-    .container-fluid {
-        justify-content: space-around;
+  .container-fluid {
+      justify-content: space-between;
+  }
 
-        navbar-toggler
+  .navbar-collapse {
+      padding: 0px 50px; 
+      ul {
+          width: 100%;
+          justify-content: space-between;
 
-        .navbar-collapse {
-            padding: 0px 50px; 
-            ul {
-                width: 100%;
-                justify-content: space-between;
-    
-                li{
-                    a {
-                        color: #aa8caf;
-                    }
-                }
-            }
+          li{
+              a {
+                  color: #aa8caf;
+              }
         }
     }
-
+  }
 }
-
-#mySidenav a {
-    position: absolute;
-    left: -180px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 200px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-  }
-  
-  #mySidenav a:hover {
-    left: 0;
-  }
-  
-  #about {
-    top: 20px;
-    background-color: #4CAF50;
-  }
-  
-  #product{
-    top: 80px;
-    background-color: #2196F3;
-  }
-  
-  #event {
-    top: 140px;
-    background-color: #f44336;
-  }
-  
-  #valoration {
-    top: 200px;
-    background-color: yellowgreen
-  }
-
-  #contact {
-    top: 260px;
-    background-color: #879
-  }

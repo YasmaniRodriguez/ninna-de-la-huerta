@@ -12,11 +12,15 @@ h2 {
   margin: 0;
 }
 
-.product {
+.page-header .carousel-item img {
+  height: 620px;
+}
+
+.product-category .product {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.product:hover .thumbnail {
+.product-category .product:hover .thumbnail {
   display: flex;
   align-items: center;
 }
@@ -161,18 +165,10 @@ body p {
   color: #f3ebdd;
 }
 
-.page-content .our-galery-container {
-  margin: 50px 50px;
-}
 .page-content .our-galery-container h2 {
+  padding-top: 50px;
   width: 100%;
   text-align: center;
-}
-.page-content .our-galery-container .product-category {
-  margin-top: 50px 50px;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
 }
 .page-content .upcoming-event-container {
   margin: 50px 50px;
@@ -275,63 +271,23 @@ body p {
 }
 
 .navbar {
-  position: absolute;
+  background-color: #f3ebdd;
+  position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 99;
 }
 .navbar .container-fluid {
-  justify-content: space-around;
+  justify-content: space-between;
 }
-.navbar .container-fluid navbar-toggler .navbar-collapse {
+.navbar .navbar-collapse {
   padding: 0px 50px;
 }
-.navbar .container-fluid navbar-toggler .navbar-collapse ul {
+.navbar .navbar-collapse ul {
   width: 100%;
   justify-content: space-between;
 }
-.navbar .container-fluid navbar-toggler .navbar-collapse ul li a {
+.navbar .navbar-collapse ul li a {
   color: #aa8caf;
-}
-
-#mySidenav a {
-  position: absolute;
-  left: -180px;
-  transition: 0.3s;
-  padding: 15px;
-  width: 200px;
-  text-decoration: none;
-  font-size: 20px;
-  color: white;
-  border-radius: 0 5px 5px 0;
-}
-
-#mySidenav a:hover {
-  left: 0;
-}
-
-#about {
-  top: 20px;
-  background-color: #4CAF50;
-}
-
-#product {
-  top: 80px;
-  background-color: #2196F3;
-}
-
-#event {
-  top: 140px;
-  background-color: #f44336;
-}
-
-#valoration {
-  top: 200px;
-  background-color: yellowgreen;
-}
-
-#contact {
-  top: 260px;
-  background-color: #879;
 }
 
 .navbar-brand {
@@ -341,7 +297,7 @@ body p {
 
 .brand {
   font-family: "Ruthie", cursive;
-  font-size: 4rem;
+  font-size: 3.5rem;
 }
 
 .n-upper-case {
@@ -412,36 +368,37 @@ body p {
   padding-top: 20px;
 }
 
-.product {
-  margin: 10px 10px;
-  width: 400px;
-  height: 400px;
+.product-category {
+  padding: 50px 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+.product-category .product {
   background-color: #f8fafb;
   justify-items: center;
   align-items: center;
+  width: 450px;
+  height: 450px;
 }
-
-.p01 {
+.product-category .p01 {
   background-image: url(../images/product/product-category-01.jpg);
 }
-
-.p02 {
+.product-category .p02 {
   background-image: url(../images/product/product-category-02.jpg);
 }
-
-.p03 {
+.product-category .p03 {
   background-image: url(../images/product/product-category-03.jpg);
 }
-
-.p04 {
+.product-category .p04 {
   background-image: url(../images/product/product-category-04.jpg);
 }
-
-.p05 {
+.product-category .p05 {
   background-image: url(../images/product/product-category-05.jpg);
 }
-
-.p06 {
+.product-category .p06 {
   background-image: url(../images/product/product-category-06.jpg);
 }
 
@@ -757,17 +714,17 @@ body p {
 }
 
 .cr-i-01 .copywriting-container {
-  top: 400px;
+  top: 200px;
   left: 50px;
 }
 
 .cr-i-02 .copywriting-container {
-  top: 400px;
+  top: 200px;
   right: 50px;
 }
 
 .cr-i-03 .copywriting-container {
-  top: 400px;
+  top: 200px;
   right: 50px;
 }
 
