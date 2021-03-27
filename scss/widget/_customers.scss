@@ -1,12 +1,13 @@
 .customer-testimonial {
     justify-content: space-between;
+    height: 500px;
+    padding: 0px 50px;
 
     .customer {
         width: 30%;
 
         .customer-say {
             height: 40%;
-            padding: 20px 0px;
 
             p {
                 text-align: justify;

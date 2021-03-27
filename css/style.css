@@ -120,10 +120,6 @@ body p {
   color: #3e556c;
 }
 
-.cta-link {
-  color: white;
-}
-
 .social-media a {
   color: #b3ccd0;
 }
@@ -138,8 +134,8 @@ body p {
 
 .cover-page {
   width: 100%;
-  height: 620px;
-  background-image: url(../../images/carousel/carousel-4.jpg);
+  height: 550px;
+  background-image: url(../images/carousel/carousel-4.jpg);
   background-size: 200%;
   animation: kenburns-bottom-lef-top-right 30s linear infinite alternate;
   position: relative;
@@ -168,8 +164,15 @@ body p {
 .cover-page .copywriting-container .copywriting .cw-value-offer {
   padding: 10px 0px;
 }
+.cover-page .copywriting-container .copywriting p {
+  color: #ebe1e1;
+}
+.cover-page .copywriting-container .copywriting .carousel .carousel-inner {
+  height: 100px;
+}
 .cover-page .copywriting-container .cta-container {
   margin-top: 50px;
+  width: 27%;
 }
 
 .page-content .our-galery-container h2 {
@@ -177,34 +180,25 @@ body p {
   width: 100%;
   text-align: center;
 }
-.page-content .upcoming-event-container {
-  margin: 50px 50px;
-}
 .page-content .upcoming-event-container h2 {
   width: 100%;
   text-align: center;
 }
 .page-content .upcoming-event-container .upcoming-event {
-  margin-top: 50px 50px;
   display: flex;
-}
-.page-content .what-customer-say-container {
-  margin: 50px 50px;
 }
 .page-content .what-customer-say-container h2 {
   width: 100%;
   text-align: center;
+  padding: 50px 0px;
 }
 .page-content .what-customer-say-container .customer-testimonial {
-  margin-top: 50px 50px;
   display: flex;
-}
-.page-content .contact-us-container {
-  margin: 50px 50px;
 }
 .page-content .contact-us-container h2 {
   width: 100%;
   text-align: center;
+  padding: 50px 0px;
 }
 
 .page-footer {
@@ -352,8 +346,9 @@ body p {
   justify-content: left;
 }
 .about-our-farm .about-us .farm-name p {
-  font-family: "Ruthie", cursive;
-  font-size: 3.1rem;
+  font-size: 1.5rem;
+  color: #3e556c;
+  text-transform: uppercase;
 }
 .about-our-farm .about-us .who-we-are {
   height: 40%;
@@ -464,6 +459,7 @@ body p {
 }
 
 .timeline {
+  margin-top: 50px;
   padding: 100px 0;
   background-color: whitesmoke;
 }
@@ -651,13 +647,14 @@ body p {
 
 .customer-testimonial {
   justify-content: space-between;
+  height: 500px;
+  padding: 0px 50px;
 }
 .customer-testimonial .customer {
   width: 30%;
 }
 .customer-testimonial .customer .customer-say {
   height: 40%;
-  padding: 20px 0px;
 }
 .customer-testimonial .customer .customer-say p {
   text-align: justify;
@@ -694,6 +691,7 @@ body p {
 
 .contact-us {
   display: flex;
+  margin-bottom: 50px;
 }
 .contact-us .side {
   width: 25%;
@@ -704,7 +702,6 @@ body p {
 .contact-us .ask-question-form .form-row {
   display: flex;
   flex-direction: column;
-  padding: 30px 0px;
 }
 .contact-us .ask-question-form .form-row .fr {
   padding: 10px 0;
@@ -740,11 +737,15 @@ body p {
   width: 100%;
 }
 
+.cta-container:hover .cta-link {
+  color: #d7b44a;
+}
 .cta-container .cta-link {
   text-decoration: none;
   background-color: #aa8caf;
   padding: 10px 10px;
   border-radius: 5px;
+  color: #ebe1e1;
 }
 
 #scroll-to-top {

@@ -1,8 +1,14 @@
 .cta-container {
+
+    &:hover .cta-link{
+        color: #d7b44a;
+    }
+
     .cta-link {
         text-decoration: none;
         background-color: #aa8caf;
         padding: 10px 10px;
         border-radius: 5px;
+        color:rgb(235, 225, 225);
     }
 }

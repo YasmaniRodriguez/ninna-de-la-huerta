@@ -1,9 +1,5 @@
 .page-content {
 
-    .about-our-farm-container {
-
-    }
-
    .our-galery-container {
         
         h2 {
@@ -13,8 +9,7 @@
         }
    }
 
-   .upcoming-event-container {
-         margin: $section-margin;   
+   .upcoming-event-container { 
         
         h2 {
             width: 100%;
@@ -22,32 +17,30 @@
         }   
 
        .upcoming-event {
-           margin-top: $section-margin;
            display: flex;
        }
    }
 
    .what-customer-say-container {
-        margin: $section-margin;
         
         h2 {
             width: 100%;
             text-align: center;
+            padding: 50px 0px;
         } 
 
        .customer-testimonial {
-           margin-top: $section-margin;
            display: flex;
        }
 
    }
 
    .contact-us-container {
-        margin: $section-margin;
         
         h2 {
             width: 100%;
             text-align: center;
+            padding: 50px 0px;
         }
 
     }
