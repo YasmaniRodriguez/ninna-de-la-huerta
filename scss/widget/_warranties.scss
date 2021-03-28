@@ -3,16 +3,16 @@
     flex-wrap: wrap;
     padding: 50px 50px;
     justify-content: space-between;
-    background-image: url(../../images/customer/bg5.png);
+    background-image: url(../images/background/bg1.png);
     background-size: cover;
     background-repeat: no-repeat;
 
     .warranty-container {
         display: flex;
         flex-direction: column;
-        width: 320px;
+        width: 300px;
         border: solid 1px white;
-        padding: 20px;
+        padding: 15px;
         background-color: white;
         border-radius: 10px;
         box-shadow: 0px 0px 10px -6px rgb(85, 78, 78);

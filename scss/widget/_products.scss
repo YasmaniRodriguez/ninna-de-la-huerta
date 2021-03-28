@@ -1,17 +1,18 @@
 .product-category {
     padding: 50px 50px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(50%, 30%));
     column-gap: 20px;
     row-gap: 20px;
+    max-width: 900px;
 
     .product {
         background-color: #f8fafb;
         justify-items: center;
         align-items: center;
         @extend %thumbnail-layout;
-        width: 450px;
-        height: 450px;
+        width: 400px;
+        height: 400px;
         box-shadow: 0px 0px 30px -6px rgb(85, 78, 78);
     }
 

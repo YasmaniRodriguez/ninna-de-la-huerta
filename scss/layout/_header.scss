@@ -1,8 +1,8 @@
 .cover-page {
     width: 100%;
     height: 550px;
-    background-image: url(../images/carousel/cover-page-bg.jpg);
-    background-size: 200%;
+    background-image: url(../images/cover-page/cover-page-3.jpg);
+    background-size: 150%;
     animation: kenburns-bottom-lef-top-right 30s linear infinite alternate;
     position: relative;
 
@@ -20,10 +20,6 @@
             position: relative;
             margin-top: 100px;
 
-            .cw-value-offer {
-                padding: 10px 0px;
-            }
-
             p {
                 color: rgb(235, 225, 225);
             }
@@ -32,6 +28,20 @@
                 .carousel-inner {
                     height: 100px;
                 }
+            }
+
+            .cw-title {
+                font-size: 1.5rem;
+            }
+    
+            .cw-value-offer {
+                font-size: 1.75rem;
+                text-transform: uppercase;
+                padding: 10px 0px;
+            }
+    
+            .cw-description {
+                font-size: 1.45rem;
             }
         }
 
