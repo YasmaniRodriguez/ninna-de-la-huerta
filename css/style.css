@@ -840,4 +840,27 @@ body p {
   border: solid 1px white;
 }
 
+@media only screen and (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-header {
+    order: 2;
+  }
+
+  .page-navbar {
+    order: 1;
+  }
+
+  .page-content {
+    order: 3;
+  }
+
+  .page-footer {
+    order: 4;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
