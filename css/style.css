@@ -120,10 +120,6 @@ body p {
   color: #3e556c;
 }
 
-.social-media a {
-  color: #b3ccd0;
-}
-
 .submit {
   color: white;
 }
@@ -135,17 +131,10 @@ body p {
 .cover-page {
   width: 100%;
   height: 550px;
-  background-image: url(../images/carousel/carousel-4.jpg);
+  background-image: url(../images/carousel/cover-page-bg.jpg);
   background-size: 200%;
   animation: kenburns-bottom-lef-top-right 30s linear infinite alternate;
   position: relative;
-}
-.cover-page .gradient-layer {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: -webkit-linear-gradient(left, black, #ffab66);
-  opacity: 0.5;
 }
 .cover-page .copywriting-container {
   width: 50%;
@@ -191,9 +180,6 @@ body p {
   width: 100%;
   text-align: center;
   padding: 50px 0px;
-}
-.page-content .what-customer-say-container .customer-testimonial {
-  display: flex;
 }
 .page-content .contact-us-container h2 {
   width: 100%;
@@ -325,9 +311,9 @@ body p {
   width: 55%;
 }
 .about-our-farm .farmer-family img {
-  width: 100%;
-  height: 100%;
-  border: solid 5px whitesmoke;
+  width: 100vh;
+  height: 70vh;
+  box-shadow: 0px 0px 20px -6px #554e4e;
 }
 .about-our-farm .about-us {
   width: 45%;
@@ -373,8 +359,7 @@ body p {
 .product-category {
   padding: 50px 50px;
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
   column-gap: 20px;
   row-gap: 20px;
 }
@@ -384,6 +369,7 @@ body p {
   align-items: center;
   width: 450px;
   height: 450px;
+  box-shadow: 0px 0px 30px -6px #554e4e;
 }
 .product-category .p01 {
   background-image: url(../images/product/product-category-01.jpg);
@@ -645,48 +631,77 @@ body p {
   border-color: #d7b44a;
 }
 
-.customer-testimonial {
-  justify-content: space-between;
-  height: 500px;
-  padding: 0px 50px;
-}
-.customer-testimonial .customer {
-  width: 30%;
-}
-.customer-testimonial .customer .customer-say {
-  height: 40%;
-}
-.customer-testimonial .customer .customer-say p {
-  text-align: justify;
-  margin: 0;
-}
-.customer-testimonial .customer .customer-say i {
-  color: #b3ccd0;
+.customer-say {
   width: 100%;
-  text-align: right;
+  height: 600px;
+  background-image: url(../../images/customer/bg2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 100px 0px;
+  margin: auto;
 }
-.customer-testimonial .customer .customer-profile {
+.customer-say .customer {
+  width: 400px;
+  background-color: white;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 60%;
-  padding: 10px 0px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
 }
-.customer-testimonial .customer .customer-profile img {
+.customer-say .customer p {
+  text-align: center;
+}
+.customer-say .customer .customer-profile {
   width: 200px;
   height: 200px;
+  background-color: whitesmoke;
   border-radius: 50%;
-  align-self: center;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: -60px;
+  box-shadow: 0px 0px 30px -6px black;
 }
-.customer-testimonial .customer .customer-profile p {
-  text-align: center;
-  margin: 15px 0;
+.customer-say .customer .cu-name {
+  width: 100%;
+  padding-bottom: 20px;
 }
-.customer-testimonial .customer .customer-profile .social-media {
-  text-align: center;
+.customer-say .customer .cu-name p {
+  font-size: 1.5rem;
+  color: #3e556c;
 }
-.customer-testimonial .customer .customer-profile .social-media a i {
-  margin: 0 5px;
+.customer-say .customer .cu-testimonial {
+  padding: 0px 20px;
+}
+.customer-say .customer .cu-sm {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  width: 100%;
+}
+.customer-say .customer .cu-sm a {
+  color: #b3ccd0;
+}
+.customer-say .customer .cu-sm .sm-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.customer-say .customer .cu-sm .sm-icon:hover .sm-link {
+  transform: scale(1.5);
+}
+.customer-say .cu-01 {
+  background-image: url(../../images/customer/c-01.jpg);
+}
+.customer-say .cu-02 {
+  background-image: url(../../images/customer/c-02.jpg);
+}
+.customer-say .cu-03 {
+  background-image: url(../../images/customer/c-03.jpg);
 }
 
 .contact-us {
@@ -764,14 +779,22 @@ body p {
 
 .why-choose-us {
   display: flex;
+  flex-wrap: wrap;
   padding: 50px 50px;
   justify-content: space-between;
-  background-color: whitesmoke;
+  background-image: url(../../images/customer/bg5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .why-choose-us .warranty-container {
   display: flex;
   flex-direction: column;
-  width: 20%;
+  width: 320px;
+  border: solid 1px white;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px -6px #554e4e;
 }
 .why-choose-us .warranty-container .wa-header {
   text-transform: uppercase;

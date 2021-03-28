@@ -1,18 +1,10 @@
 .cover-page {
     width: 100%;
     height: 550px;
-    background-image: url(../images/carousel/carousel-4.jpg);
+    background-image: url(../images/carousel/cover-page-bg.jpg);
     background-size: 200%;
     animation: kenburns-bottom-lef-top-right 30s linear infinite alternate;
     position: relative;
-
-    .gradient-layer {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background: -webkit-linear-gradient(left, black, #ffab66);
-        opacity: 0.5;
-    }
 
     .copywriting-container {
         width: 50%;
