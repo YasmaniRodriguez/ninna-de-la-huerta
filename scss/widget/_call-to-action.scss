@@ -1,7 +1,9 @@
 .cta-container {
 
+    animation: pulsate-fwd 2.5s ease-in-out infinite both;
+
     &:hover .cta-link{
-        color: #d7b44a;
+        color: #b3ccd0;
     }
 
     .cta-link {

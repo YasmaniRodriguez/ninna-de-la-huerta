@@ -31,6 +31,7 @@ body h2 {
 body p {
   color: #c0aea9;
   text-align: justify;
+  text-shadow: 1px 1px 1px #584d4d;
 }
 
 @keyframes slide-in-right {
@@ -101,6 +102,20 @@ body p {
     background-position: top right;
   }
 }
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 .category {
   color: #3e556c;
 }
@@ -123,19 +138,22 @@ body p {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-left: 50px;
+  justify-content: center;
+  align-items: center;
+  padding-left: 150px;
 }
 .cover-page .copywriting-container .copywriting {
   width: 100%;
-  max-width: 500px;
+  max-width: 370px;
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .cover-page .copywriting-container .copywriting p {
   color: #ebe1e1;
+  text-shadow: 1px 1px 1px black;
 }
 .cover-page .copywriting-container .copywriting .carousel .carousel-inner {
-  height: 100px;
+  height: 200px;
 }
 .cover-page .copywriting-container .copywriting .cw-title {
   font-size: 1.5rem;
@@ -149,8 +167,8 @@ body p {
   font-size: 1.45rem;
 }
 .cover-page .copywriting-container .cta-container {
-  margin-top: 50px;
-  width: 27%;
+  margin-top: 10px;
+  align-self: center;
 }
 
 .page-content .our-galery-container h2 {
@@ -217,19 +235,23 @@ body p {
   margin: 0;
   text-align: justify;
 }
-.page-footer .foot-section-container .foot-section .subscribe {
+.page-footer .foot-section-container .foot-section .our-messenger .msg-icon:hover .msg-link {
+  transform: scale(1.5);
+}
+.page-footer .foot-section-container .foot-section .subscribe-form {
   justify-content: space-around;
 }
-.page-footer .foot-section-container .foot-section .subscribe input {
+.page-footer .foot-section-container .foot-section .subscribe-form input {
   border: 0.5px solid #b3ccd0;
   padding: 5px;
   border-radius: 4px;
 }
-.page-footer .foot-section-container .foot-section .subscribe .submit {
+.page-footer .foot-section-container .foot-section .subscribe-form .submit {
   border-radius: 4px;
   padding: 0px 5px;
   border: none;
   background-color: #b3ccd0;
+  color: white;
 }
 .page-footer .license {
   border-top: solid 1px #f3ebdd;
@@ -265,6 +287,9 @@ body p {
 .navbar .navbar-collapse ul li a {
   color: #aa8caf;
   font-size: 1.5rem;
+}
+.navbar .navbar-collapse ul li:hover a {
+  color: #d7b44a;
 }
 
 .navbar-brand {
@@ -461,7 +486,7 @@ body p {
     display: flex;
     flex-flow: column wrap;
     width: 1170px;
-    height: 1800px;
+    height: 1620px;
     margin: 0 auto;
   }
 }
@@ -582,7 +607,7 @@ body p {
   }
 }
 .timeline .demo-card .body p {
-  font-size: 14px;
+  font-size: 1.2rem;
   line-height: 18px;
   margin-bottom: 15px;
 }
@@ -744,8 +769,11 @@ body p {
   width: 100%;
 }
 
+.cta-container {
+  animation: pulsate-fwd 2.5s ease-in-out infinite both;
+}
 .cta-container:hover .cta-link {
-  color: #d7b44a;
+  color: #b3ccd0;
 }
 .cta-container .cta-link {
   text-decoration: none;

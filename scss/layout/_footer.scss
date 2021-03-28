@@ -45,8 +45,17 @@
                     text-align: justify;
                 }
             }
+
+            .our-messenger {
+
+                .msg-icon {
+                    &:hover .msg-link {
+                        transform: scale(1.5);
+                    }
+                }
+            }
     
-            .subscribe {
+            .subscribe-form {
                 justify-content: space-around;
     
                 input {
@@ -60,6 +69,7 @@
                     padding: 0px 5px;
                     border: none;
                     background-color: #b3ccd0;
+                    color: white;
                 }
     
             }

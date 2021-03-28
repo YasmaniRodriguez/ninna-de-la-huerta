@@ -17,7 +17,7 @@ $steps: #46b8e9;
 $colors: #b3ccd0,#d7b44a,#aa8caf;
 $timeline: #bdbdbd;
 
-$container-height: $rows * ($card-height + $outer-margin) + $stagger;
+$container-height: $rows * ($card-height + $outer-margin);
 $container-width: $card-width*2 + $outer-margin*3;
 $head-height: $number-size + 50;
 $body-height: $card-height - $head-height;

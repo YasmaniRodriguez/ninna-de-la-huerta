@@ -12,21 +12,24 @@
         position: relative;
         display: flex;
         flex-direction: column;
-        padding-left: 50px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 150px;
         
         .copywriting {
             width: 100%;
-            max-width: 500px;
+            max-width: 370px;
             position: relative;
-            margin-top: 100px;
+            margin-top: 50px;
 
             p {
                 color: rgb(235, 225, 225);
+                text-shadow: 1px 1px 1px black;
             }
 
             .carousel {
                 .carousel-inner {
-                    height: 100px;
+                    height: 200px;
                 }
             }
 
@@ -46,8 +49,9 @@
         }
 
         .cta-container {
-            margin-top: 50px;
-            width: 27%;
+
+            margin-top: 10px;
+            align-self: center;
         }
     }
 }
