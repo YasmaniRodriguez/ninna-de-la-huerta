@@ -1,26 +1,213 @@
-@media only screen and (max-width: 480px) /*and (orientation: portrait)*/ {
+@media only screen and (max-width: 480px) {
     body {
         display: flex;
         flex-direction: column;
     }
 
+    .page-navbar {
+        order: 1;
+        width: 100%;
+
+        .container-fluid {
+            display: flex;
+
+            .navbar-toggler {
+                width: 20%;
+
+                .navbar-toggler-icon {
+                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(218, 197, 197)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+                }
+    
+            }
+    
+            .navbar-brand {
+                width: 80%;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+
+                p {
+                    font-size: 2.4rem;
+                    ;
+                }
+            }
+
+            .navbar-collapse {
+
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
     .page-header {
         order: 2;
 
-    }
+        .cover-page {
+            background-size: 200%;
 
-    .page-navbar {
-        order: 1;
-
+            .copywriting-container {
+                width: 100%;
+                padding-left: 20px;               
+            }
+        }
     }
 
     .page-content {
         order: 3;
 
+        .fa-angle-up {
+            visibility: hidden;
+        }
+
+        .about-our-farm {
+            display: block;
+            padding: 20px 0px;
+            height: 200px;
+            margin-bottom: 150px;
+        
+            .farmer-family {
+                display: none;
+            }
+        
+            .about-us {
+                height: 100%;
+                width: 100%;               
+                padding: 0px 20px;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                align-items: center;
+      
+                .farm-name {
+                    display: flex;
+                    align-items:center;
+        
+                    p {
+                        font-size: 1.5rem;
+
+                        .founder-profile {
+                            display: none;
+                        }
+                    }
+                }
+        
+                .who-we-are {
+        
+                    .nav-pills {
+                        justify-content: space-around;
+        
+                    }
+        
+                }
+        
+            }
+        
+        }
+
+        .why-choose-us {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0px 0px;
+            justify-content: space-between;
+            align-items: center;
+            background-image: none;
+
+        
+            .warranty-container {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                border: solid 1px white;
+                padding: 15px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0px 0px 10px -6px rgb(85, 78, 78);
+                margin: 20px 0px;
+            }
+        
+        }
+
+        .product-category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 50px 0px;
+        
+            .product {
+                width: 300px;
+                height: 300px;
+            
+                &:hover .thumbnail {
+                    display: flex; 
+                    align-items: center;   
+                } 
+            }
+        }
+
+        .customer-say {
+            width: 100%;
+            height: 1100px;
+            display: flex;
+            background-image: none;
+            align-items: center;
+            padding: 10px 0px;
+            margin-bottom: 300px;
+        
+        
+            .customer {
+                width: 400px;
+                background-color: whitesmoke;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                border-radius: 10px;
+                margin: 40px 0px;
+        
+                p {
+                    text-align: center;
+                }
+        
+                .customer-profile {
+                    width: 200px;
+                    height: 200px;
+                    background-color: whitesmoke;
+                    border-radius: 50%;
+                    background-position: center;
+                    background-size: cover;
+                    position: relative;
+                    top: -60px;
+                    box-shadow: 0px 0px 30px -6px black;
+                }
+        
+                .cu-name {
+                    width: 100%;
+                    padding-bottom: 20px;
+        
+                    p {
+                        font-size: 1.5rem;
+                        color: #3e556c;
+                    }
+                }
+        
+                .cu-testimonial {
+                    padding: 0px 20px;
+                }
+                
+            }
+        }
+
+        .contact-us-container {
+            display: none;
+        }
     }
 
     .page-footer {
         order: 4;
+        margin-top: 110px;
 
     }
 }

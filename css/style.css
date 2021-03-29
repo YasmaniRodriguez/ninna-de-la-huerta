@@ -129,6 +129,7 @@ body p {
   height: 550px;
   background-image: url(../images/cover-page/cover-page-3.jpg);
   background-size: 150%;
+  background-repeat: no-repeat;
   animation: kenburns-bottom-lef-top-right 30s linear infinite alternate;
   position: relative;
 }
@@ -836,9 +837,6 @@ body p {
 .why-choose-us .warranty-container .wa-body p {
   text-align: center;
 }
-.why-choose-us .vertical-line {
-  border: solid 1px white;
-}
 
 @media only screen and (max-width: 480px) {
   body {
@@ -846,20 +844,165 @@ body p {
     flex-direction: column;
   }
 
+  .page-navbar {
+    order: 1;
+    width: 100%;
+  }
+  .page-navbar .container-fluid {
+    display: flex;
+  }
+  .page-navbar .container-fluid .navbar-toggler {
+    width: 20%;
+  }
+  .page-navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(218, 197, 197)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .page-navbar .container-fluid .navbar-brand {
+    width: 80%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .page-navbar .container-fluid .navbar-brand p {
+    font-size: 2.4rem;
+  }
+  .page-navbar .container-fluid .navbar-collapse a {
+    font-size: 1rem;
+  }
+
   .page-header {
     order: 2;
   }
-
-  .page-navbar {
-    order: 1;
+  .page-header .cover-page {
+    background-size: 200%;
+  }
+  .page-header .cover-page .copywriting-container {
+    width: 100%;
+    padding-left: 20px;
   }
 
   .page-content {
     order: 3;
   }
+  .page-content .fa-angle-up {
+    visibility: hidden;
+  }
+  .page-content .about-our-farm {
+    display: block;
+    padding: 20px 0px;
+    height: 200px;
+    margin-bottom: 150px;
+  }
+  .page-content .about-our-farm .farmer-family {
+    display: none;
+  }
+  .page-content .about-our-farm .about-us {
+    height: 100%;
+    width: 100%;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+  .page-content .about-our-farm .about-us .farm-name {
+    display: flex;
+    align-items: center;
+  }
+  .page-content .about-our-farm .about-us .farm-name p {
+    font-size: 1.5rem;
+  }
+  .page-content .about-our-farm .about-us .farm-name p .founder-profile {
+    display: none;
+  }
+  .page-content .about-our-farm .about-us .who-we-are .nav-pills {
+    justify-content: space-around;
+  }
+  .page-content .why-choose-us {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0px 0px;
+    justify-content: space-between;
+    align-items: center;
+    background-image: none;
+  }
+  .page-content .why-choose-us .warranty-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: solid 1px white;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px -6px #554e4e;
+    margin: 20px 0px;
+  }
+  .page-content .product-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+  }
+  .page-content .product-category .product {
+    width: 300px;
+    height: 300px;
+  }
+  .page-content .product-category .product:hover .thumbnail {
+    display: flex;
+    align-items: center;
+  }
+  .page-content .customer-say {
+    width: 100%;
+    height: 1100px;
+    display: flex;
+    background-image: none;
+    align-items: center;
+    padding: 10px 0px;
+    margin-bottom: 300px;
+  }
+  .page-content .customer-say .customer {
+    width: 400px;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 40px 0px;
+  }
+  .page-content .customer-say .customer p {
+    text-align: center;
+  }
+  .page-content .customer-say .customer .customer-profile {
+    width: 200px;
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    top: -60px;
+    box-shadow: 0px 0px 30px -6px black;
+  }
+  .page-content .customer-say .customer .cu-name {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .page-content .customer-say .customer .cu-name p {
+    font-size: 1.5rem;
+    color: #3e556c;
+  }
+  .page-content .customer-say .customer .cu-testimonial {
+    padding: 0px 20px;
+  }
+  .page-content .contact-us-container {
+    display: none;
+  }
 
   .page-footer {
     order: 4;
+    margin-top: 110px;
   }
 }
 
