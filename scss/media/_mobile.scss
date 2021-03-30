@@ -109,11 +109,8 @@
                         justify-content: space-around;
         
                     }
-        
                 }
-        
             }
-        
         }
 
         .why-choose-us {
@@ -153,24 +150,28 @@
                 width: 300px;
                 height: 300px;
                 margin-top: 10px;
+                border-radius: 10px;
             
                 .thumbnail-container {
                     text-decoration: none;
                     font-size: 1.5rem;
                     height: 100%;
                     display: block;
+                    border-radius: 5px;
                 
                     .thumbnail {
                         background-color: #ffab663d;
-                        border: solid 5px #d7b44a;
+                        border: solid 2px #d7b44a;
                         display: flex;
                         justify-content: center;
                         align-items: center;
                         animation: none;
+                        border-radius: 5px;
                         
                         .category {
-                            color: #aa8caf;
-                            text-shadow: 1px 1px 1px #3e556c;
+                            color: #aa8cafbb;
+                            text-shadow: 1px 1px 1px black;
+                            animation: pulsate-fwd 10s ease-in-out infinite both;
                         }
 
                    }
