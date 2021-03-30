@@ -1,4 +1,5 @@
 @media only screen and (max-width: 480px) {
+
     body {
         display: flex;
         flex-direction: column;
@@ -37,6 +38,15 @@
                 a {
                     font-size: 1rem;
                 }
+
+                .navbar-nav {
+
+                    :nth-child(5) {
+                        display: none;
+                    }
+
+                }
+
             }
         }
     }
@@ -45,11 +55,11 @@
         order: 2;
 
         .cover-page {
-            background-size: 200%;
+            background-size: 300%;
 
             .copywriting-container {
                 width: 100%;
-                padding-left: 20px;               
+                padding: 20px 20px;               
             }
         }
     }
@@ -115,7 +125,10 @@
             align-items: center;
             background-image: none;
 
-        
+            h2 {
+                display: block;
+            }
+
             .warranty-container {
                 display: flex;
                 flex-direction: column;
@@ -139,11 +152,30 @@
             .product {
                 width: 300px;
                 height: 300px;
+                margin-top: 10px;
             
-                &:hover .thumbnail {
-                    display: flex; 
-                    align-items: center;   
-                } 
+                .thumbnail-container {
+                    text-decoration: none;
+                    font-size: 1.5rem;
+                    height: 100%;
+                    display: block;
+                
+                    .thumbnail {
+                        background-color: #ffab663d;
+                        border: solid 5px #d7b44a;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        animation: none;
+                        
+                        .category {
+                            color: #aa8caf;
+                            text-shadow: 1px 1px 1px #3e556c;
+                        }
+
+                   }
+                
+                }
             }
         }
 
@@ -244,11 +276,11 @@
             background-color: #aa8caf;
             justify-content: center;
             align-items: center;
-            font-size: 1.3rem;
-            color: #f3ebdd;
+            font-size: 1.2rem;
         
             p {
                 margin: 0;
+                color: #f3ebdd;
             }
         }
     }

@@ -7,6 +7,10 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    h2 {
+        display: none;
+    }
+
     .warranty-container {
         display: flex;
         flex-direction: column;
