@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden !important;
+}
+
 p {
   margin: 0;
 }
@@ -290,7 +295,7 @@ body p {
   font-size: 1.5rem;
 }
 .navbar .navbar-collapse ul li:hover a {
-  color: #d7b44a;
+  color: #b3ccd0;
 }
 
 .navbar-brand {
@@ -1002,7 +1007,41 @@ body p {
 
   .page-footer {
     order: 4;
-    margin-top: 110px;
+    background-color: #aa8caf;
+    height: 300px;
+    padding: 20px 20px 0px 20px;
+    color: #f3ebdd;
+    margin-top: 200px;
+  }
+  .page-footer .foot-section-container {
+    display: flex;
+    justify-content: center;
+  }
+  .page-footer .foot-section-container .visist-us {
+    display: none;
+  }
+  .page-footer .foot-section-container .subcribe-us {
+    display: none;
+  }
+  .page-footer .foot-section-container .write-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-footer .license {
+    border-top: solid 1px #f3ebdd;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    background-color: #aa8caf;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #f3ebdd;
+  }
+  .page-footer .license p {
+    margin: 0;
   }
 }
 
